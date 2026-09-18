@@ -1,0 +1,86 @@
+<h1>Форма замовлення товару</h1>
+
+<form action="#" method="post">
+    <!-- Текстові поля та обмеження -->
+    <fieldset>
+        <legend>Дані покупця та доставка</legend>
+
+        <p>
+            <label for="first-name">Ім'я: *</label><br>
+            <input type="text" id="first-name" name="first_name" required>
+        </p>
+
+        <p>
+            <label for="last-name">Прізвище: *</label><br>
+            <input type="text" id="last-name" name="last_name" required>
+        </p>
+
+        <p>
+            <label for="email">Електронна пошта: </label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="phone">Номер телефону: </label><br>
+            <input type="tel" id="phone" name="phone" required>
+        </p>
+        <p>
+            <label for="quantity">Кількість товару (від 1 до 10):</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+        </p>
+
+        <p>
+            <label for="address">Адреса доставки (не менше 10 символів):</label><br>
+            <input type="text" id="address" name="address" minlength="10">
+        </p>
+    </fieldset>
+    <!-- Вибір одного варіанта (Спосіб доставки) -->
+    <fieldset>
+        <legend>Спосіб доставки: *</legend>
+        <label>
+            <input type="radio" name="shipping" value="pickup" required> Самовивіз
+        </label>
+        <label>
+            <input type="radio" name="shipping" value="postomat"> Поштомат
+        </label><br>
+    </fieldset>
+    <!-- Вибір декількох варіантів (Додаткові параметри) -->
+    <fieldset>
+        <legend>Додаткові параметри:</legend>
+        <label>
+            <input type="checkbox" name="options[]" value="gift_wrap"> Подарункова упаковка
+        </label><br>
+        <label>
+            <input type="checkbox" name="options[]" value="warranty"> Додаткова гарантія
+        </label><br>
+        <label>
+            <input type="checkbox" name="options[]" value="sms"> SMS-повідомлення
+        </label><br>
+        <label>
+            <input type="checkbox" name="options[]" value="call_before"> Телефонний дзвінок перед доставкою
+        </label>
+    </fieldset>
+
+    <!-- Список з готовими значеннями (Спосіб оплати) -->
+    <fieldset>
+        <legend>Спосіб оплати</legend>
+        <label for="payment">Оберіть спосіб оплати:</label><br>
+        <select id="payment" name="payment">
+            <option value="card">Оплата карткою</option>
+            <option value="cash_on_delivery">Оплата при отриманні</option>
+            <option value="bank_transfer">Банківський переказ</option>
+        </select>
+    </fieldset>
+
+    <!-- Поле для великого текстового повідомлення -->
+    <fieldset>
+        <legend>Коментар до замовлення</legend>
+        <label for="comment">Максимум 200 символів:</label><br>
+        <textarea id="comment" name="comment" maxlength="200" rows="4" cols="50"></textarea>
+    </fieldset>
+
+    <br>
+    <!-- Кнопки відправлення та очищення -->
+    <button type="submit">Оформити замовлення</button>
+    <button type="reset">Очистити форму</button>
+</form>
