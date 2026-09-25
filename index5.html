@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Шапка сайту з головним заголовком та меню -->
+<header>
+    <h1 id="main-title">Tech Store</h1>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <!-- Повідомлення про акцію -->
+    <div class="promo-banner">
+        <strong>АКЦІЯ!</strong> Знижки на смартфони до кінця тижня!
+    </div>
+    <h2>Популярні товари</h2>
+    <!-- Секція з картками товарів -->
+    <section class="products-container">
+        <!-- Картка 1: Ноутбук -->
+        <article class="card">
+            <h3 class="product-title">Ноутбук</h3>
+            <p class="product-desc">Ноутбук для навчання та роботи.</p>
+            <div class="price-box">
+                <p class="price">Ціна: 25 000 грн.</p>
+            </div>
+        </article>
+        <!-- Картка 2: Смартфон (із акційною ціною) -->
+        <article class="card sale-card">
+            <h3 class="product-title">Смартфон</h3>
+            <p class="product-desc">Смартфон із великим екраном та якісною камерою.</p>
+            <div class="price-box">
+                <p class="old-price">Стара ціна: 18 000 грн.</p>
+                <p class="new-price">Нова ціна: 15 999 грн.</p>
+            </div>
+        </article>
+        <!-- Картка 3: Навушники -->
+        <article class="card">
+            <h3 class="product-title">Навушники</h3>
+            <p class="product-desc">Бездротові навушники.</p>
+            <div class="price-box">
+                <p class="price">Ціна: 2 500 грн.</p>
+            </div>
+        </article>
+    </section>
+</main>
