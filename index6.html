@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-магазин | Практична робота з CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Заголовок сайту -->
+    <header>
+        <h1>Tech Store</h1>
+    </header>
+
+    <!-- Навігаційне меню (sticky) -->
+    <nav class="menu">
+        <a href="#">Головна</a>
+        <a href="#">Товари</a>
+        <a href="#">Контакти</a>
+    </nav>
+    <main>
+        <!-- Демонстрація position: static -->
+        <section>
+            <h2>1. Демонстрація position: static</h2>
+            <div class="static-box">Перший блок (static)</div>
+            <div class="static-box">Другий блок (з top: 50px)</div>
+            <div class="static-box">Третій блок (static)</div>
+        </section>
+
+        <!-- Демонстрація position: relative -->
+        <section>
+            <h2>2. Демонстрація position: relative</h2>
+            <div class="relative-box">
+                Цей блок зміщений (relative)
+            </div>
+        </section>
+        <!-- Демонстрація relative + absolute (Картки товарів) -->
+        <section>
+            <h2>3. Популярні товари</h2>
+            <div class="products-container">
+                <!-- Картка 1 -->
+                <div class="product">
+                    <span class="discount">-20%</span>
+                    <h2>Ноутбук</h2>
+                    <p>Ноутбук для навчання та роботи.</p>
+                    <p class="price">25 000 грн</p>
+                </div>
+                <!-- Картка 2 -->
+                <div class="product">
+                    <span class="discount">-15%</span>
+                    <h2>Смартфон</h2>
+                    <p>Потужний смартфон з якісною камерою.</p>
+                    <p class="price">15 000 грн</p>
+                </div>
+                <!-- Картка 3 -->
+                <div class="product">
+                    <span class="discount">-10%</span>
+                    <h2>Навушники</h2>
+                    <p>Навушники для музики та дзвінків.</p>
+                    <p class="price">3 500 грн</p>
+                </div>
+            </div>
+        </section>
+        <!-- Демонстрація кнопки поверх зображення (banner) -->
+        <section>
+            <h2>4. Кнопка поверх зображення</h2>
+            <div class="banner">
+                <button class="banner-button">Детальніше</button>
+            </div>
+        </section>
+        <!-- Демонстрація z-index та накладання елементів -->
+        <section>
+            <h2>5. Накладання елемнтів (z-index)</h2>
+            <div class="layers">
+                <div class="box1">Блок 1 (z-index: 1)</div>
+                <div class="box2">Блок 2 (z-index: 2)</div>
+            </div>
+        </section>
+        <!-- Додатковий контент для перевірки прокручування (fixed та sticky) -->
+        <section>
+            <h2>6. Додаткова інформація</h2>
+            <p>Додатковий текст сторінки... Прокрутіть донизу, щоб перевірити фіксовані елементи.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </section>
+    </main>
+    <!-- Кнопка "Допомога" (fixed) -->
+    <button class="help">
+        Допомога
+    </button>
+</body>
+</html>
